@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+    a {
+    color:white;
+    font-size: 100%;
+    font-weight: 500;}
+
+    h1 {
+        font-size:36px;
+        font-weight: 600;}    
+    
+    p{
+        color:#777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;}
+
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    } 
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*======================== Phan Header+ Text Box============================== */
+.Header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/newbanner.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;}  
+
+    nav {
+        padding: 4% 5%;
+        align-items: center; }
+
+        nav img {
+            position: relative;
+            margin-top: -50px;
+            width: 25%;}
+
+            .nav-links {
+                text-align: center;}
+                
+                .nav-links ul {
+                    list-style: none;
+                    padding: 5px 12px;
+                    margin-top: -110px; 
+                    text-align: right; }
+    
+                    .nav-links li{
+                        list-style: none;
+                        display: inline-block;
+                        letter-spacing: 2px;
+                        padding: 10px 14px;
+                        line-height: 20px;}
+
+                    .nav-links a{
+                        font-weight: 1;
+                        text-decoration: none;
+                        font-size: 25px; }
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(202, 167, 10);
+    display: block;
+    transition: 0.5s;
+    margin: auto;}
+
+.nav-links ul li:hover::after{
+    width: 100%;}
+
+/* Text-box */
+
+.text-box {
+    position:absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;}
+
+    .text-box h1 {
+        font-size: 60px;}
+
+        .text-box p {
+            margin: 10px 0 40px;
+            color: rgb(216, 167, 7);
+            font-size: 20px;}
+        
+        .hero-btn {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 14px;
+            background: transparent;
+            cursor: pointer;}   
+
+            .hero-btn:hover{
+                border: 1px solid rgb(114, 111, 111);
+                background: rgb(216, 167, 7);
+                transition: 0.7s; }   
+
+/* Reponsive header */
+nav .fa{
+    display: none;}
+
+/*======================== Phan Service============================== */
+
+.service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;}
+
+.service-col {
+    flex-basis: 31%;
+    background: rgb(230, 211, 129);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.service-col:hover{
+    box-shadow: 0 0  20px 0px  rgb(100, 83, 6);
+}
+
+/*======================== Phan producte============================== */
+
+.producte {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;}
+
+.producte-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;}
+
+.producte-col img{
+    width: 200%;}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;}
+
+.layer:hover{
+    background: rgba(102, 101, 98, 0.5);}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: rgb(216, 176, 90);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    position: absolute;}   
+
+
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;}
+
+/*======================== Phan Facilties ============================== */
+
+.facilities {
+    background-color: rgba(0, 0, 0, 0.849);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;}
+
+    .facilities h1{
+        color: white;
+    }
+
+    .facilities p{
+        color: white;
+        font-size: 16px;
+    }
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;}
+
+.facilities-col p{
+    color: white;
+    padding: 0;}
+
+.facilities-col h3 {
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;}
+
+/*======================== Phan Testimonial ============================== */
+
+.testimonial {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;}
+
+.testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: rgb(236, 223, 190);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;}
+
+ 
+
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;}
+
+.testimonial-col p{
+    padding: 0;
+    color: rgb(20, 16, 16);}
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;}   
+
+.testimonial-col .fa{
+    color:rgb(57, 130, 214);
+}
+
+/*======================== Phan Call action ============================== */
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url(../img/banner04.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding:  0;}
+
+/*======================== Phan About============================== */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.icon .fa{
+    color: rgb(7, 80, 122);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+
+.fa-star {
+    color:rgb(216, 176, 90) ;
+}
+
+.footer  .hero-btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    border: 1px solid rgb(146, 104, 25);
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;}   
+
+    .hero-btn:hover{
+        border: 1px solid rgb(114, 111, 111);
+        background: rgb(216, 167, 7);
+        transition: 0.7s; }  
+
+
+/* Footer contact */
+.contact-form{
+    background: rgb(3, 3, 3);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    width: 80vh;
+    float: right;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================== Chinh do phan giai Reponsive ============================== */
+/* Header */
+@media (max-width: 700px)
+{  .text-box h1{
+        font-size: 20px;}
+
+    .nav-links ul li {
+        display:block;  }
+
+     .nav-links {
+         position: absolute;
+         background: rgb(216, 167, 7);
+         height: 100vh;
+         width: 200px;
+         top: 0;
+         right: -200px;
+         text-align: left;
+         transition: 0.7s;
+         z-index: 2;}   
+     
+    nav .fa {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer; }
+
+        nav .fa-bars {
+            padding:10px; 
+            margin-top: 30px;
+            padding-left: 300px; } 
+
+         nav img {
+            position: absolute;
+            margin-top: 10px;
+            width: 60%;}
+
+
+        .nav-links ul {
+            padding: 30px;}
+}
+
+/* Service */
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;  }
+}
+
+/* Testimonial */
+@media(max-width: 700px){
+.testimonial-col img {
+    margin-left: 0px;
+    margin-right: 30px;}
+}
+
+/* Contact */
+@media(max-width: 700px){
+    .cta h1 {
+        font-size: 24px;     
+    }
+}

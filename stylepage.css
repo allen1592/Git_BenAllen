@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+    a {
+    color:white;
+    font-size: 100%;
+    font-weight: 500;}
+
+    h1 {
+        font-size:36px;
+        font-weight: 600;}    
+    
+    p{
+        color:#777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;}
+
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    } 
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*======================== Phan Header+ Text Box============================== */
+.Header {
+    min-height: 5vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/newbanner.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;}  
+
+    nav {
+        padding: 4% 5%;
+        align-items: center; }
+
+        nav img {
+            position: relative;
+            margin-top: -50px;
+            width: 25%;}
+
+            .nav-links {
+                text-align: center;}
+                
+                .nav-links ul {
+                    list-style: none;
+                    padding: 5px 12px;
+                    margin-top: -90px; 
+                    text-align: right; }
+    
+                    .nav-links li{
+                        list-style: none;
+                        display: inline-block;
+                        letter-spacing: 2px;
+                        padding: 10px 14px;
+                        line-height: 20px;}
+
+                    .nav-links a{
+                        font-weight: 1;
+                        text-decoration: none;
+                        font-size: 25px; }
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(202, 167, 10);
+    display: block;
+    transition: 0.5s;
+    margin: auto;}
+
+.nav-links ul li:hover::after{
+    width: 100%;}
+
+/* Text-box */
+
+.text-box {
+    position:absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;}
+
+    .text-box h1 {
+        font-size: 60px;}
+
+        .text-box p {
+            margin: 10px 0 40px;
+            color: rgb(216, 167, 7);
+            font-size: 20px;}
+        
+        .hero-btn {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 14px;
+            background: transparent;
+            cursor: pointer;}   
+
+            .hero-btn:hover{
+                border: 1px solid rgb(114, 111, 111);
+                background: rgb(216, 167, 7);
+                transition: 0.7s; }   
+
+/* Reponsive header */
+nav .fa{
+    display: none;}
+
+
+/*======================== Phan about============================== */
+.detail {
+    margin-left: 2px;
+    text-align: center;
+    padding-top: 100px;}
+
+    .detail-col {
+        width: 100vh;
+        height: 60%;
+        margin-top: -100px;
+        border-radius: 10px;}
+
+        .detail-col img {
+            background-size: cover;
+            position: relative;
+            width: 90vh;
+            border-radius: 10px;
+            padding: 2px 2px auto;}
+
+
+
+
+
+/*======================== Chinh do phan giai Reponsive ============================== */
+/* Header */
+@media (max-width: 700px)
+{  
+
+    .nav-links ul li {
+        display:block;  }
+
+     .nav-links {
+         position: absolute;
+         background: rgb(216, 167, 7);
+         height: 100vh;
+         width: 200px;
+         top: 0;
+         right: -200px;
+         text-align: left;
+         transition: 0.7s;
+         z-index: 2;}   
+     
+    nav .fa {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer; }
+
+        nav .fa-bars {
+            padding:10px; 
+            margin-top: 30px;
+            padding-left: 300px; } 
+
+         nav img {
+            position: absolute;
+            margin-top: 10px;
+            width: 60%;}
+
+
+        .nav-links ul {
+            padding: 30px;}
+}
+
+/* Service */
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;  }
+}
+
+
+
+/* about detail */
+@media(max-width: 700px) {
+
+    .detail-col {
+        position: relative;
+        width: 200px;
+        height: 100vh;
+        display: block;
+        background: none;
+        height: 60%;
+        margin-top: -55px;
+        border-radius: 10px;}
+
+        .detail-col img {
+            position: relative;
+            width: 65vh;
+            padding-top: 10px;
+            border-radius: 10px;}
+}
